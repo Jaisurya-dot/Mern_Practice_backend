@@ -10,8 +10,8 @@ const router = express.Router();
 router.post('/login', loginAdmin);
 router.post("/register",createAdmin);
 router.get("/users",  getAllUsers);
-router.put("/:id", authMiddleware, updateUser);
-router.delete("/:id", authMiddleware, deleteUser);
+router.put("/:id", updateUser);  //authMiddleware,
+router.delete("/:id",  deleteUser);  // authMiddleware,
 router.post('/logout', logoutAdmin )
 
 
