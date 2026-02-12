@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://cozy-unicorn-220ee0.netlify.app"],
+  origin: ["http://localhost:5173", "https://cozy-unicorn-220ee0.netlify.app" ,"https://mern-practice-frontnend.vercel.app"],
   credentials: true
 }));
 
